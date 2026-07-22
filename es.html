@@ -310,7 +310,6 @@
     aspect-ratio:9/16;
     object-fit:cover;
     background:var(--ink);
-    cursor:pointer;
   }
 
   /* CONTACT */
@@ -501,27 +500,27 @@
     <div class="video-gallery" data-reveal>
 
       <div class="v-item">
-        <video src="videos/gshock-1.mp4" poster="videos/posters/gshock-1.jpg" muted loop playsinline preload="metadata"></video>
+        <video src="videos/gshock-1.mp4" poster="videos/posters/gshock-1.jpg" muted loop playsinline controls preload="metadata"></video>
       </div>
 
       <div class="v-item">
-        <video src="videos/gshock-2.mp4" poster="videos/posters/gshock-2.jpg" muted loop playsinline preload="metadata"></video>
+        <video src="videos/gshock-2.mp4" poster="videos/posters/gshock-2.jpg" muted loop playsinline controls preload="metadata"></video>
       </div>
 
       <div class="v-item">
-        <video src="videos/reels-producte.mp4" poster="videos/posters/reels-producte.jpg" muted loop playsinline preload="metadata"></video>
+        <video src="videos/reels-producte.mp4" poster="videos/posters/reels-producte.jpg" muted loop playsinline controls preload="metadata"></video>
       </div>
 
       <div class="v-item">
-        <video src="videos/tiktok-producte-1.mp4" poster="videos/posters/tiktok-producte-1.jpg" muted loop playsinline preload="metadata"></video>
+        <video src="videos/tiktok-producte-1.mp4" poster="videos/posters/tiktok-producte-1.jpg" muted loop playsinline controls preload="metadata"></video>
       </div>
 
       <div class="v-item">
-        <video src="videos/tiktok-producte-2.mp4" poster="videos/posters/tiktok-producte-2.jpg" muted loop playsinline preload="metadata"></video>
+        <video src="videos/tiktok-producte-2.mp4" poster="videos/posters/tiktok-producte-2.jpg" muted loop playsinline controls preload="metadata"></video>
       </div>
 
       <div class="v-item">
-        <video src="videos/tiktok-unboxing.mp4" poster="videos/posters/tiktok-unboxing.jpg" muted loop playsinline preload="metadata"></video>
+        <video src="videos/tiktok-unboxing.mp4" poster="videos/posters/tiktok-unboxing.jpg" muted loop playsinline controls preload="metadata"></video>
       </div>
 
     </div>
@@ -580,9 +579,8 @@
 </script>
 <script>
   document.querySelectorAll('.v-item video').forEach(video=>{
-    video.addEventListener('mouseenter', ()=>{ video.muted = true; video.currentTime = 0; video.play(); });
+    video.addEventListener('mouseenter', ()=>{ video.currentTime = 0; video.play(); });
     video.addEventListener('mouseleave', ()=>{ video.pause(); });
-    video.addEventListener('click', ()=>{ video.paused ? video.play() : video.pause(); });
   });
 </script>
 
