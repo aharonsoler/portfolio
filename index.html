@@ -16,21 +16,18 @@
 <meta property="og:title" content="Aharon Soler — UGC Creator &amp; Social Media">
 <meta property="og:description" content="Aharon Soler — UGC creator and social media content creator for fashion and lifestyle brands. Barcelona.">
 <meta property="og:url" content="https://aharonsoler.github.io/portfolio/">
-<link rel="preload" href="fonts/syne-800.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-@font-face{font-family:"Syne";src:url(fonts/syne-800.woff2) format("woff2");font-weight:800;font-style:normal;font-display:swap}
-@font-face{font-family:"Syne";src:url(fonts/syne-700.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}
-@font-face{font-family:"Instrument Serif";src:url(fonts/instrument-serif-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
-@font-face{font-family:"Hanken Grotesk";src:url(fonts/hanken-400.woff2) format("woff2");font-weight:400;font-display:swap}
-@font-face{font-family:"Hanken Grotesk";src:url(fonts/hanken-500.woff2) format("woff2");font-weight:500;font-display:swap}
-@font-face{font-family:"Hanken Grotesk";src:url(fonts/hanken-700.woff2) format("woff2");font-weight:700;font-display:swap}
 
+@font-face{font-family:"Inter";src:url(fonts/inter-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Inter";src:url(fonts/inter-500.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Inter";src:url(fonts/inter-600.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Inter";src:url(fonts/inter-700.woff2) format("woff2");font-weight:700;font-display:swap}
 :root{
   color-scheme:dark;
   --bg:#0A0A0A; --fg:#F3F0EA; --mute:#A09E99; --line:rgba(243,240,234,.18);
-  --display:"Syne","Arial Black",system-ui,sans-serif;
-  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
-  --body:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --display:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter",system-ui,sans-serif;
+  --serif:var(--display);
+  --body:-apple-system,BlinkMacSystemFont,"SF Pro Text","Inter",system-ui,sans-serif;
   --gut:clamp(20px,3.2vw,48px);
   --ease:cubic-bezier(.2,.7,.1,1);
 }
@@ -52,7 +49,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .bar{transition:transform .5s var(--ease);position:fixed;inset:0 0 auto 0;z-index:80;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:20px var(--gut);mix-blend-mode:difference;color:#fff;font-weight:500;font-size:15px}
 .bar.hide{transform:translateY(-110%)}
 .bar nav{display:flex;gap:28px;margin-left:auto}
-.bar .logo{font:800 16px/1 var(--display);letter-spacing:.02em;text-transform:uppercase}
+.bar .logo{font:700 17px/1 var(--display);letter-spacing:-.02em}
 .bar a{position:relative;padding:6px 0}
 .bar nav a::after,.lang a::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
 .bar nav a:hover::after,.lang a:hover::after,.lang a[aria-current]::after{transform:scaleX(1)}
@@ -81,38 +78,38 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .spin:hover b{transform:translateY(5px)}
 @keyframes rot{to{transform:rotate(360deg)}}
 .hero-bot{display:block}
-.hero h1{margin:0;font:800 clamp(48px,12.4vw,236px)/.86 var(--display);letter-spacing:-.045em;text-transform:uppercase;color:#fff;mix-blend-mode:difference;will-change:transform}
+.hero h1{margin:0;font:700 clamp(56px,15.5vw,280px)/.88 var(--display);letter-spacing:-.055em;color:#fff;mix-blend-mode:difference;will-change:transform}
 .hero h1 .ln{display:block;overflow:hidden;padding:.03em 0}
 .hero h1 .ln span{display:block;animation:up 1.1s var(--ease) both;animation-delay:.35s}
 .hero h1 .ln:nth-child(2) span{animation-delay:.47s}
 @keyframes up{from{transform:translateY(105%)}to{transform:none}}
-.hero-sub{margin:18px 0 0;max-width:22ch;font:400 clamp(20px,1.9vw,30px)/1.2 var(--serif);font-style:italic;letter-spacing:.005em;text-wrap:balance}
+.hero-sub{margin:18px 0 0;max-width:24ch;font:600 clamp(20px,1.9vw,30px)/1.2 var(--display);letter-spacing:-.02em;text-wrap:balance}
 
 /* MARQUEE */
 .marq{padding:clamp(48px,8vw,120px) 0;overflow:hidden;border-bottom:1px solid var(--line)}
 .mrow{display:flex;width:max-content;animation:mq 42s linear infinite}
 .mrow.rev{animation-direction:reverse;animation-duration:56s;margin-top:clamp(8px,1.4vw,20px)}
 .mrow span{flex:none;display:flex;align-items:center;white-space:nowrap}
-.mrow.a span{font:800 clamp(56px,10.5vw,190px)/1 var(--display);text-transform:uppercase;letter-spacing:-.03em;color:transparent;-webkit-text-stroke:1.5px var(--fg)}
-.mrow.b span{font:400 clamp(34px,5.4vw,96px)/1.1 var(--serif);font-style:italic;color:var(--fg)}
+.mrow.a span{font:700 clamp(56px,11vw,200px)/1 var(--display);letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1.5px var(--fg)}
+.mrow.b span{font:600 clamp(34px,5.4vw,96px)/1.1 var(--display);letter-spacing:-.04em;color:var(--fg)}
 .mrow i{font-style:normal;margin:0 .45em;font-size:.5em;-webkit-text-stroke:0;color:var(--fg)}
 @keyframes mq{to{transform:translateX(-50%)}}
 
 /* STATEMENT */
 .statement{padding:clamp(80px,14vw,220px) var(--gut)}
-.statement h2{margin:0;max-width:19ch;font:500 clamp(32px,6.2vw,108px)/1.04 var(--body);letter-spacing:-.035em;text-wrap:balance}
+.statement h2{margin:0;max-width:19ch;font:600 clamp(32px,6.2vw,108px)/1.05 var(--display);letter-spacing:-.045em;text-wrap:balance}
 .statement .w{transition:opacity .25s linear}
-.statement em{font:400 1.14em/.9 var(--serif);font-style:italic;letter-spacing:-.01em}
+.statement em{font-style:normal;font-weight:700;color:#fff}
 
 /* WORK — pinned horizontal stage of phones */
 .work{position:relative}
 .stage{position:relative;overflow:hidden;background:var(--bg)}
 .work.is-pinned .stage{position:sticky;top:0;height:100svh;perspective:1700px}
 .bgwords{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none}
-.bgwords span{grid-area:1/1;font:800 clamp(90px,23vw,430px)/.9 var(--display);text-transform:uppercase;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1.5px rgba(243,240,234,.22);white-space:nowrap;opacity:0;transform:translateY(8%) scale(.98);transition:opacity .7s ease,transform .9s var(--ease)}
+.bgwords span{grid-area:1/1;font:700 clamp(90px,24vw,440px)/.9 var(--display);letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1.5px rgba(243,240,234,.2);white-space:nowrap;opacity:0;transform:translateY(8%) scale(.98);transition:opacity .7s ease,transform .9s var(--ease)}
 .bgwords span.on{opacity:1;transform:none}
 .wtop{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:baseline;gap:24px;padding:clamp(88px,9vw,110px) var(--gut) 0}
-.wtop h2{margin:0;font:800 clamp(14px,1.2vw,17px)/1 var(--display);letter-spacing:.16em;text-transform:uppercase}
+.wtop h2{margin:0;font:600 clamp(14px,1.2vw,17px)/1 var(--display);letter-spacing:.14em;text-transform:uppercase}
 .wtop p{margin:0;color:var(--mute);font-size:14px;text-align:right}
 .work.is-pinned .wtop{position:absolute;inset:0 0 auto 0}
 .track{--ph:min(66svh,640px);position:relative;display:flex;align-items:center;gap:clamp(24px,5vw,80px);padding:40px calc(50vw - var(--ph)*9/32) 40px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain}
@@ -133,7 +130,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .wbot{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:flex-end;gap:24px;padding:0 var(--gut) clamp(20px,2.6vw,36px)}
 .work.is-pinned .wbot{position:absolute;inset:auto 0 0 0}
 .now{margin:0;max-width:46ch}
-.now b{display:block;font:800 clamp(18px,1.6vw,24px)/1.1 var(--display);text-transform:uppercase;letter-spacing:.02em}
+.now b{display:block;font:700 clamp(20px,1.8vw,28px)/1.1 var(--display);letter-spacing:-.025em}
 .now span{display:block;margin-top:6px;color:var(--mute);font-size:15px}
 .count{font:700 15px/1 var(--body);font-variant-numeric:tabular-nums;letter-spacing:.1em;text-align:right}
 .count small{color:var(--mute);font-size:inherit}
@@ -147,8 +144,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .portrait{position:relative;border-radius:999px 999px 24px 24px;overflow:hidden;aspect-ratio:4/5.4;background:#151515}
 .portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;transform:scale(1.12);transition:transform 1.6s var(--ease)}
 .portrait.in img{transform:none}
-.kicker{margin:0 0 28px;font:800 13px/1 var(--display);letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
-.lead{margin:0 0 clamp(36px,5vw,72px);font:400 clamp(22px,2.4vw,38px)/1.28 var(--body);letter-spacing:-.02em;text-wrap:pretty}
+.kicker{margin:0 0 28px;font:700 13px/1 var(--display);letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+.lead{margin:0 0 clamp(36px,5vw,72px);font:500 clamp(22px,2.4vw,38px)/1.25 var(--display);letter-spacing:-.025em;text-wrap:pretty}
 .facts{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:0 32px;border-top:1px solid var(--line)}
 .facts div{padding:18px 0;border-bottom:1px solid var(--line)}
 .facts .wide{grid-column:1/-1}
@@ -157,9 +154,9 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 
 /* CONTACT */
 .contact{padding:clamp(90px,14vw,230px) var(--gut) clamp(40px,6vw,80px);border-top:1px solid var(--line);text-align:left}
-.contact h2{margin:0 0 clamp(28px,4vw,56px);font:800 clamp(40px,9vw,180px)/.9 var(--display);letter-spacing:-.045em;text-transform:uppercase}
-.contact h2 em{display:block;font:400 .86em/.95 var(--serif);font-style:italic;letter-spacing:-.02em;text-transform:none}
-.mail{display:inline-flex;align-items:center;gap:.4em;max-width:100%;font:700 clamp(19px,4.3vw,76px)/1.1 var(--display);letter-spacing:-.03em;overflow-wrap:anywhere;padding:.15em 0;background:linear-gradient(var(--fg),var(--fg)) 0 100%/0 .09em no-repeat;transition:background-size .6s var(--ease)}
+.contact h2{margin:0 0 clamp(28px,4vw,56px);font:700 clamp(44px,11.5vw,220px)/.94 var(--display);letter-spacing:-.055em}
+.contact h2 em{display:block;font-style:normal;color:#86868B}
+.mail{display:inline-flex;align-items:center;gap:.4em;max-width:100%;font:700 clamp(19px,5.2vw,92px)/1.1 var(--display);letter-spacing:-.04em;overflow-wrap:anywhere;padding:.15em 0;background:linear-gradient(var(--fg),var(--fg)) 0 100%/0 .09em no-repeat;transition:background-size .6s var(--ease)}
 .mail:hover{background-size:100% .09em}
 .mail span{display:inline-block;transition:transform .45s var(--ease)}
 .mail:hover span{transform:translate(.1em,-.1em)}
@@ -183,7 +180,7 @@ html.js .rv.in{opacity:1;transform:none}
 @media (max-width:800px){
   .bar nav{display:none}
   .hero-bot{flex-direction:column;align-items:flex-start;gap:18px}
-  .hero h1{font-size:11.6vw}
+  .hero h1{font-size:20vw}
   .spin{width:92px;height:92px}
   .strip:nth-child(n+4){display:none}
   .about .grid{grid-template-columns:1fr}
@@ -214,7 +211,7 @@ html.js .rv.in{opacity:1;transform:none}
     <div class="strip" style="--i:1"><video muted loop playsinline autoplay preload="auto" width="360" height="640" poster="videos/posters/gshock-1.jpg" src="videos/hero-2.mp4"></video></div>
     <div class="strip" style="--i:2"><video muted loop playsinline autoplay preload="auto" width="360" height="640" poster="videos/posters/tiktok-unboxing.jpg" src="videos/hero-3.mp4"></video></div>
     <div class="strip" style="--i:3"><video muted loop playsinline autoplay preload="auto" width="360" height="640" poster="videos/posters/schindler-2.jpg" src="videos/hero-4.mp4"></video></div>
-    <div class="strip" style="--i:4"><video muted loop playsinline autoplay preload="auto" width="360" height="640" poster="videos/posters/gshock-2.jpg" src="videos/hero-5.mp4"></video></div>
+    <div class="strip" style="--i:4"><video muted loop playsinline autoplay preload="auto" width="360" height="640" poster="videos/posters/gshock-1.jpg" src="videos/hero-5.mp4"></video></div>
   </div>
   <div class="hero-ui">
     <div class="hero-top">
