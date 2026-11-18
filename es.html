@@ -2,8 +2,8 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Aharon Soler — Creador Audiovisual</title>
-<meta name="description" content="Aharon Soler — creador de contenido audiovisual especializado en moda y lifestyle. Barcelona.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Aharon Soler — Creador UGC y Redes Sociales</title>
+<meta name="description" content="Aharon Soler — creador UGC y de contenido para redes sociales de marcas de moda y lifestyle. Barcelona.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -365,6 +365,20 @@
     .gallery{columns:1;}
     .facts{grid-template-columns:1fr;}
   }
+
+  .hero-actions{display:flex; align-items:center; gap:28px; flex-wrap:wrap; margin-top:34px;}
+  .hero-actions .hero-cta{margin-top:0;}
+  .hero-btn{
+    background:var(--accent-2); color:var(--ink); border:none;
+    padding:14px 24px; font-family:inherit; font-size:13px;
+    letter-spacing:0.1em; text-transform:uppercase; font-weight:600; cursor:pointer;
+    transition:transform .2s ease;
+  }
+  .hero-btn:hover{transform:translateY(-2px);}
+  .v-cap{
+    margin-top:10px; font-size:12px; letter-spacing:0.08em;
+    text-transform:uppercase; font-weight:600; color:var(--ink-soft);
+  }
 </style>
 </head>
 <body>
@@ -372,9 +386,9 @@
 <header class="nav">
   <a href="#top" class="logo">Aharon Soler</a>
   <nav>
-    <a href="#about">Sobre mí</a>
+    <a href="#work">Vídeos</a>
     <a href="#brands">Marcas</a>
-    <a href="#work">Trabajos</a>
+    <a href="#about">Sobre mí</a>
     <button class="contact-btn" id="contactBtn" type="button">Contacto</button>
     <span class="lang-switch"><a href="index.html">EN</a><span>/</span><a href="es.html" class="active">ES</a><span>/</span><a href="ca.html">CA</a></span>
   </nav>
@@ -383,42 +397,54 @@
 <section class="hero" id="top">
   <img class="bg" src="images/img_2218.jpg" alt="Aharon Soler, retrato de estudio">
   <div class="hero-inner">
-    <p class="eyebrow" style="color:#fff;">Creador Audiovisual — Moda &amp; Lifestyle — Barcelona</p>
+    <p class="eyebrow" style="color:#fff;">Creador UGC y Redes Sociales — Moda &amp; Lifestyle — Barcelona</p>
     <h1 class="hero-title display">Aharon<br>Soler</h1>
-    <p class="hero-sub serif-italic">Concepto, rodaje, montaje — y siempre delante de la cámara.</p>
-    <a href="#work" class="hero-cta">Ver el trabajo ↓</a>
+    <p class="hero-sub serif-italic">Vídeos para TikTok e Instagram que se sienten reales, no como un anuncio.</p>
+    <div class="hero-actions">
+      <a href="#work" class="hero-cta">Ver los vídeos ↓</a>
+      <button class="hero-btn" id="heroContact" type="button">Escríbeme</button>
+    </div>
   </div>
 </section>
 
-<section id="about">
+<section id="work">
   <div class="wrap">
     <div class="section-head" data-reveal>
-      <h2>Sobre mí</h2>
-      <span class="section-num">01 — Perfil</span>
+      <h2>Vídeos UGC</h2>
+      <span class="section-num">01 — Trabajos seleccionados</span>
     </div>
-    <div class="bio-grid">
-      <div class="bio-photo" data-reveal>
-        <img src="images/img_7517.jpg" alt="Retrato de Aharon Soler — Nerety">
-      </div>
-      <div class="bio-text" data-reveal>
-        <p>Creador de contenido audiovisual centrado en moda y lifestyle. Me encargo de producción UGC, planifico calendarios de contenido y creo formatos nativos para TikTok e Instagram.</p>
-        <p>Para marcas como G-SHOCK y Nerety he llevado todo el proceso yo mismo: concepto, rodaje, montaje. También he trabajado como modelo para Zalando, Laura Cabanas y Vintage Palace, entre otras, así que me muevo igual de bien dirigiendo un shooting que delante del objetivo. Ahora mismo busco un equipo dinámico, con criterio de diseño, donde la estética y la imagen de marca importen de verdad.</p>
+    <div class="video-gallery" data-reveal>
 
-        <dl class="facts">
-          <div><dt>Ubicación</dt><dd>Barcelona, España</dd></div>
-          <div><dt>Idiomas</dt><dd>Catalán, Español, Inglés, Italiano, Alemán</dd></div>
-          <div><dt>Plataformas</dt><dd>TikTok, Instagram, YouTube, Pinterest</dd></div>
-          <div><dt>Herramientas</dt><dd>DaVinci Resolve, CapCut, Canva</dd></div>
-        </dl>
-
-        <ul class="exp-list">
-          <li><span class="role">Creador de Contenido — UGC y Redes Sociales <span class="brand">· G-SHOCK (Casio)</span></span><span class="yr">2025</span></li>
-          <li><span class="role">Creador de Contenido y Modelo <span class="brand">· Nerety</span></span><span class="yr">2023</span></li>
-          <li><span class="role">Modelo de Pasarela, AW25 y SS26 <span class="brand">· Laura Cabanas</span></span><span class="yr">2024–25</span></li>
-          <li><span class="role">Campaña Streetwear <span class="brand">· Zalando</span></span><span class="yr">2020</span></li>
-          <li><span class="role">Modelo <span class="brand">· Vintage Palace</span></span><span class="yr">2020</span></li>
-        </ul>
+      <div class="v-item">
+        <video src="videos/gshock-1.mp4" poster="videos/posters/gshock-1.jpg" muted loop playsinline controls preload="metadata" aria-label="G-SHOCK · Vídeo de producto"></video>
+        <p class="v-cap">G-SHOCK · Vídeo de producto</p>
       </div>
+
+      <div class="v-item">
+        <video src="videos/gshock-2.mp4" poster="videos/posters/gshock-2.jpg" muted loop playsinline controls preload="metadata" aria-label="G-SHOCK · Vídeo de producto"></video>
+        <p class="v-cap">G-SHOCK · Vídeo de producto</p>
+      </div>
+
+      <div class="v-item">
+        <video src="videos/reels-producte.mp4" poster="videos/posters/reels-producte.jpg" muted loop playsinline controls preload="metadata" aria-label="Reel · Producto"></video>
+        <p class="v-cap">Reel · Producto</p>
+      </div>
+
+      <div class="v-item">
+        <video src="videos/tiktok-producte-1.mp4" poster="videos/posters/tiktok-producte-1.jpg" muted loop playsinline controls preload="metadata" aria-label="TikTok · Producto"></video>
+        <p class="v-cap">TikTok · Producto</p>
+      </div>
+
+      <div class="v-item">
+        <video src="videos/tiktok-producte-2.mp4" poster="videos/posters/tiktok-producte-2.jpg" muted loop playsinline controls preload="metadata" aria-label="TikTok · Producto"></video>
+        <p class="v-cap">TikTok · Producto</p>
+      </div>
+
+      <div class="v-item">
+        <video src="videos/tiktok-unboxing.mp4" poster="videos/posters/tiktok-unboxing.jpg" muted loop playsinline controls preload="metadata" aria-label="Bawl Vintage · TikTok unboxing"></video>
+        <p class="v-cap">Bawl Vintage · TikTok unboxing</p>
+      </div>
+
     </div>
   </div>
 </section>
@@ -433,111 +459,61 @@
       <div class="brand-row">
         <span class="idx">01</span>
         <span class="brand-name">G-Shock</span>
-        <span class="brand-note">Creador de contenido — UGC y redes sociales, proceso completo de concepto a montaje.</span>
+        <span class="brand-note">Contenido UGC y redes sociales, proceso completo de concepto a montaje.</span>
       </div>
       <div class="brand-row">
         <span class="idx">02</span>
         <span class="brand-name">Nerety</span>
-        <span class="brand-note">Creador de contenido y modelo para los canales sociales del marketplace de moda.</span>
+        <span class="brand-note">Creador de contenido para los canales sociales del marketplace de moda.</span>
       </div>
       <div class="brand-row">
         <span class="idx">03</span>
-        <span class="brand-name">Zalando</span>
-        <span class="brand-note">Campaña streetwear, 2020.</span>
-      </div>
-      <div class="brand-row">
-        <span class="idx">04</span>
-        <span class="brand-name">Laura Cabanas</span>
-        <span class="brand-note">Modelo de pasarela — desfile AW25 y colección SS26.</span>
-      </div>
-      <div class="brand-row">
-        <span class="idx">05</span>
-        <span class="brand-name">Vintage Palace</span>
-        <span class="brand-note">Modelo.</span>
+        <span class="brand-name">Bawl Vintage</span>
+        <span class="brand-note">Contenido UGC para TikTok, formato unboxing.</span>
       </div>
     </div>
   </div>
 </section>
 
-<section id="work">
+<section id="about">
   <div class="wrap">
     <div class="section-head" data-reveal>
-      <h2>Trabajos Seleccionados</h2>
-      <span class="section-num">03 — Galería</span>
+      <h2>Sobre mí</h2>
+      <span class="section-num">03 — Perfil</span>
     </div>
-    <div class="gallery" data-reveal>
-
-      <div class="g-item photo"><img src="images/img_4091.jpg" alt="Laura Cabanas Runway Show"><div class="g-cap">Laura Cabanas Runway Show</div></div>
-
-      <div class="g-item photo"><img src="images/img_0099.jpg" alt="Laura Cabanas"><div class="g-cap">Laura Cabanas</div></div>
-
-      <div class="g-item photo"><img src="images/knotty_heads_estudi-100.jpg" alt="Knotty Heads"><div class="g-cap">Knotty Heads</div></div>
-
-      <div class="g-item photo"><img src="images/img_5276.jpg" alt="Dmoon Studios"><div class="g-cap">Dmoon Studios</div></div>
-
-      <div class="g-item photo"><img src="images/img_0077.jpg" alt="Laura Cabanas"><div class="g-cap">Laura Cabanas</div></div>
-
-      <div class="g-item photo"><img src="images/img_3847.jpg" alt="Dmoon Studios"><div class="g-cap">Dmoon Studios</div></div>
-
-      <div class="g-item photo"><img src="images/img_7404.jpg" alt="Finissim"><div class="g-cap">Finissim</div></div>
-
-      <div class="g-item photo"><img src="images/img_0078_2.jpg" alt="Laura Cabanas"><div class="g-cap">Laura Cabanas</div></div>
-
-      <div class="g-item photo"><img src="images/img_0066.jpg" alt="Dmoon Studios"><div class="g-cap">Dmoon Studios</div></div>
-
-      <div class="g-item photo"><img src="images/img_7524.jpg" alt="Nerety"><div class="g-cap">Nerety</div></div>
-
-    </div>
-  </div>
-</section>
-
-<section id="product-videos">
-  <div class="wrap">
-    <div class="section-head" data-reveal>
-      <h2>Vídeos de Producto</h2>
-      <span class="section-num">04 — Contenido UGC</span>
-    </div>
-    <div class="video-gallery" data-reveal>
-
-      <div class="v-item">
-        <video src="videos/gshock-1.mp4" poster="videos/posters/gshock-1.jpg" muted loop playsinline controls preload="metadata"></video>
+    <div class="bio-grid">
+      <div class="bio-photo" data-reveal>
+        <img src="images/img_7517.jpg" alt="Retrato de Aharon Soler">
       </div>
+      <div class="bio-text" data-reveal>
+        <p>Creador de contenido UGC y de redes sociales para marcas de moda y lifestyle. Pienso la idea, la grabo y la monto, en formatos nativos para TikTok e Instagram, y planifico calendarios de contenido.</p>
+        <p>Para marcas como G-SHOCK y Nerety he llevado todo el proceso yo mismo, del concepto al montaje final. Busco marcas y equipos que quieran contenido que se sienta real y encaje con su imagen.</p>
 
-      <div class="v-item">
-        <video src="videos/gshock-2.mp4" poster="videos/posters/gshock-2.jpg" muted loop playsinline controls preload="metadata"></video>
+        <dl class="facts">
+          <div><dt>Ubicación</dt><dd>Barcelona, España</dd></div>
+          <div><dt>Idiomas</dt><dd>Catalán, Español, Inglés, Italiano, Alemán</dd></div>
+          <div><dt>Plataformas</dt><dd>TikTok, Instagram, YouTube, Pinterest</dd></div>
+          <div><dt>Herramientas</dt><dd>DaVinci Resolve, CapCut, Canva</dd></div>
+        </dl>
+
+        <ul class="exp-list">
+          <li><span class="role">Creador de Contenido — UGC y Redes Sociales <span class="brand">· G-SHOCK (Casio)</span></span><span class="yr">2025</span></li>
+          <li><span class="role">Creador de Contenido <span class="brand">· Nerety</span></span><span class="yr">2023</span></li>
+        </ul>
       </div>
-
-      <div class="v-item">
-        <video src="videos/reels-producte.mp4" poster="videos/posters/reels-producte.jpg" muted loop playsinline controls preload="metadata"></video>
-      </div>
-
-      <div class="v-item">
-        <video src="videos/tiktok-producte-1.mp4" poster="videos/posters/tiktok-producte-1.jpg" muted loop playsinline controls preload="metadata"></video>
-      </div>
-
-      <div class="v-item">
-        <video src="videos/tiktok-producte-2.mp4" poster="videos/posters/tiktok-producte-2.jpg" muted loop playsinline controls preload="metadata"></video>
-      </div>
-
-      <div class="v-item">
-        <video src="videos/tiktok-unboxing.mp4" poster="videos/posters/tiktok-unboxing.jpg" muted loop playsinline controls preload="metadata"></video>
-      </div>
-
     </div>
   </div>
 </section>
 
 <section class="contact" id="contact">
   <div class="wrap">
-    <p class="eyebrow" data-reveal>05 — Contacto</p>
+    <p class="eyebrow" data-reveal>04 — Contacto</p>
     <h2 data-reveal>Creemos<br>algo.</h2>
-    <span class="serif-italic" data-reveal>Abierto a colaboraciones de moda y lifestyle, y a oportunidades laborales.</span>
+    <span class="serif-italic" data-reveal>Abierto a colaboraciones UGC y a puestos de creador de contenido / redes sociales.</span>
     <a class="contact-email" href="mailto:aharonsoler99@gmail.com" data-reveal>aharonsoler99@gmail.com</a>
     <div class="contact-links" data-reveal>
-      <a href="tel:+34696627834">+34 696 627 834</a>
       <a href="https://instagram.com/aharonsoler" target="_blank" rel="noopener">Instagram @aharonsoler</a>
       <a href="https://tiktok.com/@aharonsoler" target="_blank" rel="noopener">TikTok @aharonsoler</a>
-      <a href="https://www.linkedin.com/search/results/people/?keywords=Aharon%20Soler%20Innocent" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
 </section>
@@ -553,10 +529,8 @@
   <h3>Creemos<br>algo.</h3>
   <a class="drawer-email" href="mailto:aharonsoler99@gmail.com">aharonsoler99@gmail.com</a>
   <ul class="drawer-links">
-    <li><a href="tel:+34696627834">+34 696 627 834</a></li>
     <li><a href="https://instagram.com/aharonsoler" target="_blank" rel="noopener">Instagram @aharonsoler</a></li>
     <li><a href="https://tiktok.com/@aharonsoler" target="_blank" rel="noopener">TikTok @aharonsoler</a></li>
-    <li><a href="https://www.linkedin.com/search/results/people/?keywords=Aharon%20Soler%20Innocent" target="_blank" rel="noopener">LinkedIn</a></li>
   </ul>
 </aside>
 
@@ -573,6 +547,8 @@
   function openDrawer(){ drawer.classList.add('open'); overlay.classList.add('open'); }
   function closeDrawer(){ drawer.classList.remove('open'); overlay.classList.remove('open'); }
   contactBtn.addEventListener('click', openDrawer);
+  const heroContact = document.getElementById('heroContact');
+  if(heroContact){ heroContact.addEventListener('click', openDrawer); }
   drawerClose.addEventListener('click', closeDrawer);
   overlay.addEventListener('click', closeDrawer);
   document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeDrawer(); });
