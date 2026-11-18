@@ -47,8 +47,11 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 
 /* header: inverts over whatever is under it */
 .bar{transition:transform .5s var(--ease);position:fixed;inset:0 0 auto 0;z-index:80;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:20px var(--gut);mix-blend-mode:difference;color:#fff;font-weight:500;font-size:15px}
+.bar .cta{padding:10px 20px;border-radius:999px;background:#fff;color:#000;font-weight:700;font-size:15px;letter-spacing:-.01em;transition:transform .4s var(--ease)}
+.bar .cta:hover{transform:scale(1.07)}
 .bar.hide{transform:translateY(-110%)}
 .bar nav{display:flex;gap:28px;margin-left:auto}
+.bar .lang{margin-left:6px}
 .bar .logo{font:700 17px/1 var(--display);letter-spacing:-.02em}
 .bar a{position:relative;padding:6px 0}
 .bar nav a::after,.lang a::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
@@ -183,6 +186,7 @@ html.js .rv{opacity:0;transform:translateY(40px);transition:opacity .9s ease,tra
 html.js .rv.in{opacity:1;transform:none}
 
 @media (max-width:800px){
+  .bar{gap:12px}.bar .cta{margin-left:auto;padding:9px 16px;font-size:14px}
   .social{grid-template-columns:1fr}
   .mail{font-size:5.2vw}
   .bar nav{display:none}
@@ -207,7 +211,8 @@ html.js .rv.in{opacity:1;transform:none}
 <a class="skip" href="#top">Skip to content</a>
 <header class="bar">
   <a class="logo" href="#top" translate="no">Aharon Soler</a>
-  <nav aria-label="Main"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <nav aria-label="Main"><a href="#work">Work</a><a href="#about">About</a></nav>
+  <a class="cta" href="#contact">Contact</a>
   <div class="lang"><a href="index.html" aria-current="true" hreflang="en" lang="en">EN</a><a href="es.html" hreflang="es" lang="es">ES</a><a href="ca.html" hreflang="ca" lang="ca">CA</a></div>
 </header>
 
